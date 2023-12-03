@@ -1,0 +1,227 @@
+/* ==========================================================================
+   reset all
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    /* other */
+}
+
+main {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    /* other */
+}
+
+
+/* ==========================================================================
+   components
+   ========================================================================== */
+
+/* header
+   ========================================================================== */
+
+.header {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    /* other */
+    border-bottom: 1px solid #000;
+}
+
+/* dialog/modal
+   ========================================================================== */
+dialog {
+    /* Display & box model */
+    padding: 1rem;
+    width: 18rem;
+    /* other */
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+.dialog-scrim {
+    /* display & box model*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* other */
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.dialog-activity {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    width: 18rem;
+    /* other */
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+
+.dialog-btns {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* activity container
+   ========================================================================== */
+
+.activity-container {
+    /* display & box model */
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    /* other */
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+}
+
+
+/* buttons
+   ========================================================================== */
+
+.btn {
+    /* display & box model */
+    padding: 0.5rem 1rem;
+    /* other */
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+    /* other */
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* inputfield
+   ========================================================================== */
+
+.d-a-inputfield {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.25rem;
+}
+
+input {
+    /* display & box model */
+    padding: 0.5rem;
+    /* other */
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+
+input:focus {
+    /* other */
+    outline: none !important;
+    border: 2px solid #000;
+}
+
+
+/* effects
+   ========================================================================== */
+
+.d-none {
+    /* display & box model */
+    display: none;
+}
+
+
+
+/* ==========================================================================
+   font
+   ========================================================================== */
+
+h2 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.btn {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+label {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+/* font implementation - 'roboto mono'
+   ========================================================================== */
+
+/* bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* medium */
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* regluar */
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
