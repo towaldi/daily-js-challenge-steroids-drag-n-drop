@@ -50,35 +50,12 @@ main {
 
 /* dialog/modal
    ========================================================================== */
-dialog {
+.add-activity-dialog {
     /* Display & box model */
-    padding: 1rem;
-    width: 18rem;
-    /* other */
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-}
-.dialog-scrim {
-    /* display & box model*/
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* other */
-    background-color: rgba(0, 0, 0, 0.38);
-}
-
-.dialog-activity {
-    /* display & box model */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 1rem;
     width: 18rem;
     /* other */
@@ -94,12 +71,13 @@ dialog {
     justify-content: flex-end;
     align-items: center;
     gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 /* activity container
    ========================================================================== */
 
-.activity-container {
+.content {
     /* display & box model */
     height: 100%;
     width: 100%;
@@ -142,8 +120,14 @@ dialog {
     gap: 0.25rem;
 }
 
+form {
+    /* display & box model */
+    margin-top: 1rem;
+}
+
 input {
     /* display & box model */
+    width: 100%;
     padding: 0.5rem;
     /* other */
     border: 1px solid #000;

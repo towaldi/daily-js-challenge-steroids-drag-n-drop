@@ -12,37 +12,33 @@
     <header class="header">
         <h2>Drag-n-Drop on steroids</h2>
         <!-- insert button -->
-        <button id="add-activity-btn" class="btn">Add Activity</button>
+        <button id="open-add-activity-btn" class="btn">Add Activity</button>
     </header>
 
     <!-- dialog activity -->
-    <dialog id="dialog-add-activity">
+    <dialog id="add-activity-dialog" class="add-activity-dialog">
         <h2>Add Activity</h2>
         <form action="">
             <label for="activity">Activity (max. 200 characters)</label>
-            <input id="input-new-activity-header" type="text" name="activity" placeholder="Activity of the user...">
+            <input id="input-new-activity" type="text" name="activity" placeholder="Activity of the user...">
         </form>
         <!-- button -->
         <div class="dialog-btns">
-            <button formmethod="dialog" value="cancel" class="btn close-btn">Cancel</button>
-            <button value="default" class="btn confirm-btn">Confirm</button>
+            <button formmethod="dialog" id="close-add-activity-btn" value="cancel" class="btn">Cancel</button>
+            <button id="confirm-add-activity-btn" value="default" class="btn">Confirm</button>
         </div>
     </dialog>
 
     <!-- main -->
     <main>
-        <!-- activity container -->
-        <div class="activity-container">
-            <div class="a-c-header">
-                <h3>Activity Header</h3>
-            </div>
-            <div class="a-c-content">
-                <!-- content: steps + details -->
-            </div>
+        <!-- content -->
+        <div id="content" class="content">
+            <!-- activity container -->
         </div>
     </main>
 
     <!-- link js -->
     <script src="script.js"></script>
+    <script src="./models/activity-container.class.js"></script>
 </body>
 </html>
